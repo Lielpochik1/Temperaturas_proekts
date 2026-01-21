@@ -4,28 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperatūras ieraksts</title>
+    <h1>Temperatūras saraksts</h1>
      <link href="stylesss.css" rel="stylesheet">
 </head>
 
 <body>
-     <div class="main-container"><!--galvenais konteiners-->
+     <div class="main-container">
         <h2>Temperatūras ieraksts</h2>
-        <div class="calc-container">
-            <div class="input-container">
+        <div class="input-container">
                 <div class="input-group">
                     <label>Datums (dd.mm.ggg)</dd></label>
-                    <input type="number" id="roomWidth" step="0.01">
+                    <input type= "date"id="datums">
                 </div>
                 <div class="input-group">
                     <label>Mazākā temperatūra </label>
-                    <input type="number" id="roomLength" step="0.01">
+                    <input type="number" id="min_temp" step="0.5">
                 </div>
                 <div class="input-group">
                     <label>Lielākā temperatūra </label>
-                    <input type="number" id="linoliumWidth" step="0.01">
+                    <input type="number" id="max_temp" step="0.5">
                 </div>
+                <div class="button-group">
+                    <button> Pievienot</button>
+                    <p> Ievadi dienas minimālo un maksimālo  temperatūru.(Velāk var pieslēdt vadlidāciju/Flask saglabāšanu.)</p>
+                </div>
+             </div>
+         </div>
+        <div class="result-row"> 
 
+            <table>
+                <tr>
+                <th>Datums</th>
+                <th>Mazākā temp</th>
+                <th>Lielākā temp</th>    
+                <th>Vidējā temp</th>
+            </tr>
+            <tr>
+                <td>2024-12-05</td>
+                <td>23</td>
+                <td>44</td>    
+                <td>33.50</td>
+            </tr>
+             <tr>
+                <td>2026-01-06</td>
+                <td>-5</td>
+                <td>25</td>    
+                <td>10.00</td>
+            </tr>
+             <tr>
+                <td>2026-01-07</td>
+                <td>-15</td>
+                <td>5</td>    
+                <td>-5.000</td>
+            </tr>
+             <tr>
+                <td>2026-01-01</td>
+                <td>-25</td>
+                <td>35</td>    
+                <td>5.00</td>
+            </tr>
+            </tr>
+        </table>
+        <p>Vidējā temperatūra visām dienām:00.00
+        </p>
+       
+     </div>
 
+ 
 
 </body>
 </html>
