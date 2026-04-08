@@ -55,12 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
         for (const it of items) {
             const avg = calcDayAvg(it.min, it.max);
             const tr = document. createElement("tr");
-            tr.innerHTML = '
-                <td class="date">${escapeHTML(it.date)}</td>
-                <td class="num">${Number(it.min).toFixed(1)}</td>
-                <td class="num">${Number(it.max).toFixed(1)}</td>
+            tr.innerHTML = ""
+                <td class="date">${escapeHTML(it.date)}</td>;
+                <td class="num">${Number(it.min).toFixed(1)}</td>;
+                <td class="num">${Number(it.max).toFixed(1)}</td>;
                 <td class="num">${avg.toFixed(2)}</td>
-            ';
+            ""
                  
                  tbodyE1.appenChild(tr);
 
